@@ -42,6 +42,6 @@ npm i axios
 npm i mysql
 npm install -g eslint@6.8.0
 curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash
-
+mysql -u root < server/database/schema.sql
 ```
 
