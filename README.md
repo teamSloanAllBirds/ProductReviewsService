@@ -34,15 +34,23 @@ From within the root directory:
 npm install -g webpack
 npm install
 
-npm i express
-npm i nodemon
 npm i babel-loader @babel/core @babel/preset-env @babel/preset-react
-npm i react react-dom
 npm i axios
+npm i bluebird
+npm i body-parser
+npm i express
+npm i jquery
 npm i mysql
+npm i nodemon
+npm i react react-dom
+npm i underscore
+npm install --save-dev webpack
+npm install --save-dev webpack-cli
 npm install -g eslint
-npm install -g reactorcore/eslint-config-hackreactor
+npm install -g hackreactor-labs/eslint-config-hackreactor
 curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash
+
 mysql -u root < server/database/schema.sql
+npm run seed
 ```
 

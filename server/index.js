@@ -1,11 +1,19 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
+const controllers = require('./controllers/controllers');
+
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(path.join(__dirname, '../public')));
+// console.log(path.join(__dirname, '../public'))
+
+
+app.get('/api/reviews', controllers.get);
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Review app is listening at http://localhost:${port}`);
 });

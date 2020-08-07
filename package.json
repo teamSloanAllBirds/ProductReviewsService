@@ -1,5 +1,5 @@
 {
-  "name": "Product Reviews Service",
+  "name": "productreviewsservice",
   "version": "1.0.0",
   "description": "A service that display customer's reviews about the product",
   "author": "Nathan Vu <mr.nathanvu@gmail.com>",
@@ -9,8 +9,9 @@
   },
   "scripts": {
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
-    "start": "nodemon ./server/server.js",
-    "build": "webpack --config webpack.config.js --watch"
+    "start": "nodemon ./server/index.js",
+    "build": "webpack --config webpack.config.js --watch",
+    "seed": "node ./server/database/seed.js"
   },
   "dependencies": {
     "@babel/core": "^7.11.1",
@@ -18,15 +19,22 @@
     "@babel/preset-react": "^7.10.4",
     "axios": "^0.19.2",
     "babel-loader": "^8.1.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jquery": "^3.5.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "underscore": "^1.10.2"
   },
   "devDependencies": {
     "eslint": "^7.6.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
-    "eslint-plugin-react": "^7.20.5"
+    "eslint-plugin-react": "^7.20.5",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
