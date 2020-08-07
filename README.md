@@ -40,7 +40,8 @@ npm i babel-loader @babel/core @babel/preset-env @babel/preset-react
 npm i react react-dom
 npm i axios
 npm i mysql
-npm install -g eslint@6.8.0
+npm install -g eslint
+npm install -g reactorcore/eslint-config-hackreactor
 curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash
 mysql -u root < server/database/schema.sql
 ```
