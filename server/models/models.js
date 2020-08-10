@@ -1,9 +1,12 @@
-// const db = require('../database/index.js');
+const db = require('../database/seed.js');
 
 module.exports = {
   getAll: (callback) => {
     var queryStr = 'SELECT * FROM reviews';
-    db.query(queryStr, (err, results) => {
+    db.connection.query(queryStr, (err, results) => {
+      if (err) {
+        return callback(err, results);
+      }
       callback(err, results);
     });
   }

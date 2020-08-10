@@ -1,7 +1,7 @@
 /**
  * These rules enforce Hack Reactor's style guide.
  * Visit this repo for more information:
- *   https://github.com/reactorcore/eslint-config-hackreactor
+ *   https://github.com/hackreactor-labs/eslint-config-hackreactor
  */
 
 module.exports = {
@@ -9,6 +9,8 @@ module.exports = {
     'es6': true
   },
   parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 6,
     ecmaFeatures: {
       'jsx': true
     }
@@ -17,7 +19,7 @@ module.exports = {
     /* Indentation */
     'no-mixed-spaces-and-tabs': 2,
     'indent': [2, 2],
-    /* Variable cames */
+    /* Variable names */
     'camelcase': 2,
     /* Language constructs */
     'curly': 2,

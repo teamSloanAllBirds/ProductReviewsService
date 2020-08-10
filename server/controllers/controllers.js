@@ -5,9 +5,9 @@ module.exports = {
     console.log('GET REQUEST', req.body);
     models.getAll((err, results) => {
       if (err) {
-        res.send('CONTROLLER GET FAILS', err);
+        console.log('SERVER GET FAILS', err);
       }
-      // res.send('CONTROLLER GET SUCCESS');
+      console.log('SERVER GET SUCCESS');
       res.send(results);
     });
   }
