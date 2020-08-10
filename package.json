@@ -31,9 +31,6 @@
     "underscore": "^1.10.2"
   },
   "devDependencies": {
-    "eslint": "^7.6.0",
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
-    "eslint-plugin-react": "^7.20.5",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
