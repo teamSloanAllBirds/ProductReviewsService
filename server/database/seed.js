@@ -18,8 +18,8 @@ connection.connect((err) => {
         } else {
           for (let j = 1; j < 11; j++) {
             let customerName = faker.name.findName();
-            let date = '' + faker.date.between('2020-01-01', '2020-08-01');
-            let createdAt = date.slice(0, 10);
+            let date = '' + faker.date.between('2019-01-01', '2020-08-01');
+            let createdAt = date.slice(4, 16);
             let rating = faker.random.number(5);
             let commentTitle = 'From ' + faker.address.state();
             let comment = faker.lorem.sentences();
