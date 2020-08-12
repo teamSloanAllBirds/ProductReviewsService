@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import axios from 'axios';
 
-// import Review from './Review.jsx';
+import Review from './Review.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -115,6 +115,8 @@ class App extends React.Component {
               <p>currently displaying {this.state.visible} of {this.state.reviews.length} reviews</p>
             </div>
           </div>
+
+          <Review reviews={this.state.reviews}/>
 
         </div>
       </div>
