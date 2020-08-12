@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+p {
+  font-weight: 400;
+  color: rgb(33, 42, 47);
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  /* margin: 0px 0px 18px; */
+  margin: 0;
+  padding: 0px;
+  vertical-align: baseline;
+
+}
+
+.reviews-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 24px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.review {
+  margin: 60px auto 84px;
+}
+
+/* ---------- REVIEWS OVERVIEW ---------- */
+
+.reviews-overview-container {
+  margin-bottom: 48px;
+}
+
+.reviews-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 32px;
+  line-height: 1.31;
+  font-weight: 700;
+}
+
+.reviews-overview-rating {
+  margin-bottom: 36px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.rating-stars {
+  margin-bottom: 0px;
+
+  width: 139px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-legend {
+  text-align: left;
+  margin-left: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.reviews-overview-fit-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fit-score-text {
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.fit-score-chart {
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+  max-width: 357px;
+}
+
+.fit-score-chart-score {
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 42px;
+}
+
+.fit-score-ruler {
+  background-color: rgb(184, 209, 220);
+  height: 2px;
+  position: relative;
+}
+
+.fit-score-marking-left {
+  left: 0%;
+  background-color: rgb(184, 209, 220);
+  width: 2px;
+  height: 18px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.fit-score-legend-left {
+  left: 0%;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 24px;
+}
+
+.fit-score-marking-center {
+  left: 50%;
+  background-color: rgb(184, 209, 220);
+  width: 2px;
+  height: 18px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.fit-score-legend-center {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 24px;
+
+}
+
+.fit-score-marking-right {
+  left: 100%;
+  background-color: rgb(184, 209, 220);
+  width: 2px;
+  height: 18px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.fit-score-legend-right {
+  right: 0%;
+  text-align: right;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 24px;
+}
+
+.fit-score-marking-knob {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(33, 42, 47);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* ---------- REVIEWS LIST ---------- */
+
+.reviews-list-container {
+  margin-bottom: 24px;
+}
+
+.reviews-list-item {
+  padding: 24px 0px;
+  border-top: 1px solid rgb(211, 212, 213);
+}
+
+.reviews {
+  display: flex;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.reviews-item-author-info {
+  width: 23%;
+}
+
+.reviews-item-rating {
+  width: 18%;
+}
+
+.reviews-item-content {
+  width: 59%;
+}
+
+/* ---------- LOADER BUTTON ---------- */
+
+.reviews-loader {
+  text-align: center;
+}
+
+.reviews-loader-button-container {
+  margin-bottom: 24px;
+}
+
+button {
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: rgb(33, 42, 47);
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+  /* opacity: 1; */
+  /* position: relative; */
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 13px 18px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(33, 42, 47);
+  /* text-decoration: none; */
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color:  rgb(255, 255, 255);
+  color: rgb(33, 42, 47);
+}
+
+.reviews-loader-count-text {
+  margin-bottom: 24px;
+}
+
