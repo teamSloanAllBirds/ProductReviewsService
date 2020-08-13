@@ -1,14 +1,19 @@
-const db = require('../database/seed.js');
+const mysql = require('mysql');
+const mysqlConfig = require('../database/config.js');
+
+const connection = mysql.createConnection(mysqlConfig);
 
 module.exports = {
   getAll: (callback) => {
     var queryStr = 'SELECT * FROM reviews';
-    db.connection.query(queryStr, (err, results) => {
+    connection.query(queryStr, (err, results) => {
       if (err) {
-        return callback(err, results);
+        console.log('GETALL METHOD FAILS', err);
       }
-      callback(err, results);
+      console.log('GETALL METHOD SUCCESS');
+      callback(null, results);
     });
   }
-
 };
+
+

@@ -11,7 +11,7 @@ class App extends React.Component {
 
     this.state = {
       reviews: [],
-      visible: 3
+      visible: 0
     };
 
     this.handleFetchReviews = this.handleFetchReviews.bind(this);
@@ -116,7 +116,7 @@ class App extends React.Component {
             </div>
           </div>
 
-          <Review reviews={this.state.reviews}/>
+          {/* <Review reviews={this.state.reviews}/> */}
 
         </div>
       </div>
