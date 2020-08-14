@@ -60,13 +60,25 @@ p {
   justify-content: center;
 }
 
-.rating-stars {
-  margin-bottom: 0px;
+/* ---------- BIG RATING STAR  ---------- */
 
+.overview-item-rating {
+  margin-bottom: 0px;
+}
+
+.rating-star-big {
   width: 139px;
   display: flex;
   justify-content: space-between;
 }
+
+.big-icon .half-icon {
+  display: block;
+  width: 23;
+  height: 23;
+}
+
+/* ---------- END OF BIG RATING STAR ---------- */
 
 .rating-legend {
   text-align: left;
@@ -201,9 +213,38 @@ strong {
   width: 23%;
 }
 
-.reviews-item-rating {
+/* ---------- SMALL RATING STAR ---------- */
+
+.review-item-rating {
   width: 18%;
+  margin-bottom: 6px;
 }
+
+.rating-star-small {
+  display: flex;
+  justify-content: space-between;
+  width: 89px;
+}
+
+.small-icon {
+  display: block;
+  width: 13;
+  height: 13;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+polygon {
+  fill: rgb(33, 42, 47);
+}
+
+:not(svg) {
+  transform-origin: 0px 0px;
+}
+
+/* ---------- END OF SMALL RATING STAR ---------- */
 
 .reviews-item-content {
   width: 59%;
@@ -246,4 +287,6 @@ button:hover {
 .reviews-loader-count-text {
   margin-bottom: 24px;
 }
+
+
 
