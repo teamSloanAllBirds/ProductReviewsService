@@ -36,5 +36,3 @@ connection.connect((err) => {
     console.log ('----- SEEDING DATABASE COMPLETE ----- \n');
   }
 });
-
-module.exports.connection = connection;
