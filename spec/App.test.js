@@ -1,8 +1,7 @@
 import React from 'react';
-import { shallow, mount, render } from 'enzyme';
-import toJSON from 'enzyme-to-json';
+import { shallow, mount } from 'enzyme';
 
-import App from '../client/components/App.jsx';
+import App from '../client/components/App';
 
 
 describe('App functionality', () => {
@@ -12,7 +11,6 @@ describe('App functionality', () => {
   });
 
   it('should be selectable by className "reviews-container"', () => {
-    // eslint-disable-next-line func-style
     function callback(data) {
       const component = shallow(<App />);
       expect(component.is('.reviews-container')).toBe(true);
@@ -21,7 +19,6 @@ describe('App functionality', () => {
   });
 
   it('should render and mount properly', () => {
-    // eslint-disable-next-line func-style
     function callback(data) {
       const component = mount(<App />);
       expect(component).toMatchSnapshot();
@@ -30,7 +27,6 @@ describe('App functionality', () => {
   });
 
   it('should mount in a full DOM', function() {
-    // eslint-disable-next-line func-style
     function callback(data) {
       const component = mount(<App />);
       expect(component.find('.app').length).toBe(1);
