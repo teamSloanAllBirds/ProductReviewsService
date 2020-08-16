@@ -52,5 +52,10 @@ curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/instal
 
 mysql -u root < server/database/schema.sql
 npm run seed
+
+npm install --save-dev jest
+npm i --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
+npm i --save-dev babel-jest
+npm i --save-dev enzyme-to-json
 ```
 
