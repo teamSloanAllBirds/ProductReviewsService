@@ -1,6 +1,7 @@
 # allbirds.com
 
 > A service that display customer's reviews about the product
+>
 
 ## Related Projects
 
@@ -15,14 +16,11 @@
 
 ## Usage
 
-> Some usage instructions
+> This Review service is intended to be used with Image Carousel and Product Options services for a wholistic experience
 
 ## Requirements
 
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
+- Node 12.16.3
 
 ## Development
 
@@ -31,31 +29,28 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 From within the root directory:
 
 ```sh
-npm install -g webpack
 npm install
+```
 
-npm i babel-loader @babel/core @babel/preset-env @babel/preset-react
-npm i axios
-npm i bluebird
-npm i body-parser
-npm i express
-npm i jquery
-npm i mysql
-npm i nodemon
-npm i react react-dom
-npm i underscore
-npm install --save-dev webpack
-npm install --save-dev webpack-cli
-npm install -g eslint
-npm install -g hackreactor-labs/eslint-config-hackreactor
-curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash
-
-mysql -u root < server/database/schema.sql
+### Seeding the Database
+Please edit ./server/database/config.js before running
+```sh
 npm run seed
+```
 
-npm install --save-dev jest
-npm i --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
-npm i --save-dev babel-jest
-npm i --save-dev enzyme-to-json
+### Starting the server
+
+From within the root directory:
+
+Run the nodemon server:
+
+```sh
+npm run start
+```
+
+Run webpack:
+
+```sh
+npm run build
 ```
 
