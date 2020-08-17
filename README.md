@@ -34,7 +34,8 @@ npm install
 
 ### Seeding the Database
 
-Please edit ./server/database/config.js before running
+Make your own config.js with the following line:
+module.exports = {user: 'FILL_ME', password: 'FILL_ME', database: 'FILL_ME', multipleStatements: true};
 
 ```sh
 mysql -u YOUR_USERNAME_HERE < server/database/schema.sql
