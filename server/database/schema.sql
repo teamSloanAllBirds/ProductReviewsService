@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS allbirds;
+DROP DATABASE IF EXISTS allbirds_reviews;
 
-CREATE DATABASE allbirds;
+CREATE DATABASE allbirds_reviews;
 
-USE allbirds;
+USE allbirds_reviews;
 
 CREATE TABLE products (
   _id INT NOT NULL AUTO_INCREMENT,
@@ -19,7 +19,3 @@ CREATE TABLE reviews (
   comment VARCHAR(450) NOT NULL,
   FOREIGN KEY (product_id) REFERENCES products(_id)
 );
-
-/*  Execute this file from the command line by typing:
- *    mysql -u root < server/database/schema.sql
- *  to create the database and the tables.*/

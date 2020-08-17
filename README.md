@@ -24,23 +24,33 @@
 
 ## Development
 
-### Installing Dependencies
-
 From within the root directory:
+
+### Installing Dependencies
 
 ```sh
 npm install
 ```
 
 ### Seeding the Database
+
 Please edit ./server/database/config.js before running
+
+```sh
+mysql -u YOUR_USERNAME_HERE < server/database/schema.sql
+```
+
 ```sh
 npm run seed
 ```
 
 ### Starting the server
 
-From within the root directory:
+Run webpack:
+
+```sh
+npm run build
+```
 
 Run the nodemon server:
 
@@ -48,9 +58,5 @@ Run the nodemon server:
 npm run start
 ```
 
-Run webpack:
 
-```sh
-npm run build
-```
 
