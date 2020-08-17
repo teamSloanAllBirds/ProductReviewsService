@@ -34,7 +34,7 @@ npm install
 
 ### Seeding the Database
 
-Make your own config.js with the following line:
+In database repo, create config.js with the following line:
 module.exports = {user: 'FILL_ME', password: 'FILL_ME', database: 'FILL_ME', multipleStatements: true};
 
 ```sh
