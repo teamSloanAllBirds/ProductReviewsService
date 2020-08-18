@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Overview from './Overview.jsx';
 import ReviewList from './ReviewList.jsx';
+import '../../public/style.css';
 
 class App extends React.Component {
   constructor(props) {
