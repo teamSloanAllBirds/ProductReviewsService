@@ -18,7 +18,8 @@ class App extends React.Component {
     this.handleLoadMore = this.handleLoadMore.bind(this);
   }
 
-  componentWillMount() {
+  // componentWillMount() {
+  componentDidMount() {
     // this.handleFetchReviews(1);
     // console.log('WINDOW LOCATION PATHNAME', window.location.pathname);
     this.handleFetchReviews(window.location.pathname === '/' ? '/1' : window.location.pathname);
