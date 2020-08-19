@@ -19,11 +19,11 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    this.handleFetchReviews();
+    this.handleFetchReviews(1);
   }
 
-  handleFetchReviews() {
-    axios.get('/api/reviews')
+  handleFetchReviews(id) {
+    axios.get(`/api/productreviews/${id}`)
       .then(({data}) => {
         console.log('CLIENT SENDING GET SUCCESS', data);
         this.setState({reviews: data});

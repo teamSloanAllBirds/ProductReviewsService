@@ -2,7 +2,9 @@ const models = require('../models/models');
 
 module.exports = {
   get: (req, res) => {
-    models.getAll((err, results) => {
+    var id = req.url.split('/')[3];
+    console.log('ID', id);
+    models.getAll(id, (err, results) => {
       if (err) {
         console.log('SERVER GET FAILS', err);
       }

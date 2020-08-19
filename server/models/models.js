@@ -4,8 +4,8 @@ const mysqlConfig = require('../database/config.js');
 const connection = mysql.createConnection(mysqlConfig);
 
 module.exports = {
-  getAll: (callback) => {
-    var queryStr = 'SELECT * FROM reviews';
+  getAll: (id, callback) => {
+    var queryStr = `SELECT customerName, createdAt, rating, commentTitle, comment FROM reviews WHERE product_id=${id};`;
     connection.query(queryStr, (err, results) => {
       if (err) {
         console.log('GETALL METHOD FAILS', err);

@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, '../public')));
 
 
-app.get('/api/reviews', controllers.get);
+app.get('/api/productreviews/:reviewId', controllers.get);
 
 app.listen(port, () => {
   console.log(`Review app is listening at http://localhost:${port}`);
