@@ -19,11 +19,14 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    this.handleFetchReviews(1);
+    // this.handleFetchReviews(1);
+    // console.log('WINDOW LOCATION PATHNAME', window.location.pathname);
+    this.handleFetchReviews(window.location.pathname === '/' ? '/1' : window.location.pathname);
   }
 
   handleFetchReviews(id) {
-    axios.get(`/api/productreviews/${id}`)
+    // axios.get(`/api/productreviews/${id}`)
+    axios.get(`/api/productreviews${id}`)
       .then(({data}) => {
         console.log('CLIENT SENDING GET SUCCESS', data);
         this.setState({reviews: data});
