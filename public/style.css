@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -247,17 +247,17 @@ strong {
   height: 13;
 }
 
-svg:not(:root) {
+/* svg:not(:root) {
   overflow: hidden;
-}
+} */
 
 polygon {
   fill: rgb(33, 42, 47);
 }
 
-:not(svg) {
+/* :not(svg) {
   transform-origin: 0px 0px;
-}
+} */
 
 /* ---------- END OF SMALL RATING STAR ---------- */
 
