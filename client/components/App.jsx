@@ -53,7 +53,7 @@ class App extends React.Component {
             <div className="reviews-loader-button-container">
               {this.state.visible < this.state.reviews.length &&
                   <button type='button' onClick={this.handleLoadMore}>
-                    Load More Review
+                    Load More Reviews
                   </button>}
             </div>
             <div className="reviews-loader-count-text">
