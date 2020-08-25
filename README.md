@@ -2,7 +2,7 @@
 ##### A replication of the product reviews service on allbirds' individual House Page
 
 > A service that display customer's reviews about the product
-> ![Image of Service Module] (https://fec-allbirds.s3-us-west-1.amazonaws.com/FEC+-+ProductReviewService.png)
+> ![Image of Product Reviews Service](https://fec-allbirds.s3-us-west-1.amazonaws.com/FEC+-+ProductReviewService.png)
 
 ## Related Projects
   - https://github.com/teamSloanAllBirds/ProductTopNavigationService
